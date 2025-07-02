@@ -86,7 +86,11 @@ npx playwright show-report
 
 ## 📸 Test Scenarios Covered
 * 🔐 Login with valid credentials
+* 🔐 Login with invalid credentials
 * 🛒 Add multiple items to cart
+* 🛒 Remove items from cart
+* 📃 Access item details from Inventory Page
+* 🔍 Filter items
 * ✅ Validate cart contents and item prices
 * 📝 Fill checkout form with valid/invalid input
 * 🧾 Assert tax, subtotal, and total summary
