@@ -43,7 +43,7 @@ Playwright-SauceDemo/
 ## 🔍 Features
 
 - ✅ Login automation (Standard User)
-- ✅ Add to cart + badge count verification
+- ✅ Add to cart / Remove + badge count verification
 - ✅ Cart and item validation
 - ✅ Complete checkout flow with form validation
 - ✅ Data-driven testing (via TypeScript objects)
