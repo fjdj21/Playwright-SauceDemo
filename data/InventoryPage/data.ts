@@ -1,8 +1,8 @@
 export const filterOptions = {
-    option1: {label: 'Name (A to Z)', value: 'az'},
-    option2: {label: 'Name (Z to A)', value: 'za'},
-    option3: {label: 'Price (low to high)', value: 'lohi'},
-    option4: {label: 'Price (high to low)', value: 'hilo'},
+    nameAZ: {label: 'Name (A to Z)', value: 'az'},
+    nameZA: {label: 'Name (Z to A)', value: 'za'},
+    priceLH: {label: 'Price (low to high)', value: 'lohi'},
+    priceHL: {label: 'Price (high to low)', value: 'hilo'},
 }
 
 export const inventoryItems = {

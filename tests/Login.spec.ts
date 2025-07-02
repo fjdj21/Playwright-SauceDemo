@@ -7,7 +7,7 @@ import { filterOptions, inventoryItems } from '../data/InventoryPage/data'
 let loginPage: LoginPage
 let inventoryPage: InventoryPage
 
-test.describe('Valid Credentials', () => {
+test.describe('Valid Credentials' , () => {
     
     test.beforeEach('Navigate to Login Page', async ({page}) => {
         
@@ -126,10 +126,10 @@ test.describe('Valid Credentials', () => {
         });
 
         // Perform the action that causes the alert
-        await inventoryPage.selectFilter(filterOptions.option1.value);
-        console.log(`Selected filter: ${filterOptions.option1.value}`);
+        await inventoryPage.selectFilter(filterOptions.nameAZ.value);
+        console.log(`Selected filter: ${filterOptions.nameAZ.value}`);
 
-        await expect(inventoryPage.filter.Locator).toHaveValue(filterOptions.option1.value);
+        await expect(inventoryPage.filter.Locator).toHaveValue(filterOptions.nameAZ.value);
 
         const numberAdded = await inventoryPage.addToCart(inventoryItems.item1.name, inventoryItems.item2.name);
 

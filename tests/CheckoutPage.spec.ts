@@ -76,7 +76,7 @@ test.describe('Go back to Inventory Page',async () => {
         await checkoutPage.clickContinueShopping();
         const URL = page.url();
         console.log(`Navigated back to: ${URL}`)
-        await expect(page).toBe(URL)
+        await expect(page).toHaveURL(URL)
     })
 
     test('Click Checkout button', async ({page}) => {

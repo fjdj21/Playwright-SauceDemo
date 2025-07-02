@@ -47,14 +47,14 @@ test.describe('Filter', () => {
     })
 
     test('Inventory Page - Filter Name (A to Z)', async ({page}) => {
-        const items = await inventoryPage.selectFilter(filterOptions.option1.label);
+        const items = await inventoryPage.selectFilter(filterOptions.nameAZ.label);
 
         const sorted = [...items].sort((a, b) => a.name.localeCompare(b.name));
         expect(items).toEqual(sorted);
     })
 
     test('Inventory Page - Filter Name (Z to A)', async ({page}) => {
-        const items = await inventoryPage.selectFilter(filterOptions.option2.label);
+        const items = await inventoryPage.selectFilter(filterOptions.nameZA.label);
 
         const sorted = [...items].sort((a, b) => b.name.localeCompare(a.name));
         await expect(items).toEqual(sorted);
@@ -62,14 +62,14 @@ test.describe('Filter', () => {
     })
 
     test('Inventory Page - Filter Price (Low to High)', async ({page}) => {
-        const items = await inventoryPage.selectFilter(filterOptions.option3.label);
+        const items = await inventoryPage.selectFilter(filterOptions.priceLH.label);
 
         const sorted = [...items].sort((a, b) => a.price - b.price);
         expect(items).toEqual(sorted);
     })
 
     test('Inventory Page - Filter Price (High to Low)', async ({page}) => {
-        const items = await inventoryPage.selectFilter(filterOptions.option4.label);
+        const items = await inventoryPage.selectFilter(filterOptions.priceHL.label);
         const sorted = [...items].sort((a, b) => b.price - a.price);
         expect(items).toEqual(sorted);
     })
