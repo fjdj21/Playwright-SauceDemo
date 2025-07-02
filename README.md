@@ -38,7 +38,8 @@ Playwright-SauceDemo/
 ├── package-lock.json
 ├── playwright.config.ts
 └── README.md
- </code></pre>
+</code></pre>
+
 
 ## 🔍 Features
 
@@ -58,7 +59,6 @@ Playwright-SauceDemo/
 ```bash
 git clone https://github.com/fjdj21/Playwright-SauceDemo.git
 cd Playwright-SauceDemo
-</code></pre>
 ```
 
 ### 2. Install dependencies
